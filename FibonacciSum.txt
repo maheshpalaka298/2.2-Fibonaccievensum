@@ -1,0 +1,47 @@
+//To print Fibonocc Sequence and Sum of terms in the sequence//
+import java.util.*;
+class FibonacciSum
+{
+	public static void main(String[] args) 
+	{
+		Scanner fib=new Scanner(System.in);
+		int sum=0,N,a=0,b=1,c;
+		System.out.println("Enter the N value : ");
+		N=fib.nextInt();
+		System.out.println("\n "+a+" "+b);
+		for(int i=2;i<=N;i++)
+			{
+			c=a+b;
+			System.out.println(" "+c);
+			a=b;
+			b=c;
+				{
+					if(c%2==0)
+						{
+				sum+=c;
+				System.out.println("The Sum of Even terms is "+sum);
+				}
+				}
+			}
+			}
+}
+
+ //Output//
+
+ Enter the N value :
+10
+
+ 0 1
+ 1
+ 2
+The Sum of Even terms is 2
+ 3
+ 5
+ 8
+The Sum of Even terms is 10
+ 13
+ 21
+ 34
+The Sum of Even terms is 44
+ 55
+Press any key to continue . . .
